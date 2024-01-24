@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="GrapeKIT - A grape genome tool kit from KIT">
+	<meta name="title" content="GrapeKIT">
+	<meta name="author" content="Sumanth Kumar Mutte">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<!-- CSS and other file links here -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- https://github.com/michalsnik/aos -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+{% if title %}
+	<title>variants-{{ title }}</title>
+{% else %}
+	<title>variants</title>
+{% endif %}
+
+	<link rel="stylesheet" href="static/css/custom.css"/>
+	<link rel="stylesheet" type="text/css" href='{{url_for("static", filename="/css/jquery.dataTables.min.css")}}'/>
+    <link rel="stylesheet" type="text/css" href="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.10/css/dataTables.checkboxes.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.0.2/css/fixedColumns.dataTables.min.css"/>
+	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+	<link rel="stylesheet" href='{{url_for("static", filename="/css/typeahead.css")}}'>
+
+
+	<link rel="stylesheet" type="text/css" href="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.10/css/dataTables.checkboxes.css"/>
+{% block style %}	
+{% endblock style %}
+</head>
+
+ <body>
+<!-- Top navigartion bar settings -->
+<nav class="navbar navbar-light bg-faded fixed-top navbar-toggleable-md">
+			<a href="" class="navbar-left visible-lg">
+				<img class="img_responsive" src="static/img/KIT.png" height="50" align='left'>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarsExampleContainer">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> 
+							<a href="index.html"><i class="fa fa-home"></i> Home</a> 
+					</li>
+				</ul>
+			</div>
+
+			</nav>			
+
+
+
+
+
+			
+			
+	<main class="bd-masthead" id="content">
+			<div class="container">
+					<p class="lead left">GrapeKIT</p>
+					<p class="sublead left">
+									A grape genome tool kit from KIT
+					</p>
+			</div>
+	</main>
+
+	
+	<!-- main content -->
+	<!--<div class="container">
+		<h1>Variants</h1>
+		<h3>Browse for various polymorphisms (SNPs, MNPs and InDels) from different accessions.</h3>
+		<hr> -->
+		{% with messages = get_flashed_messages(with_categories=true) %}
+		{% if messages %}
+		{% for category, message in messages %}
+		<div class="alert alert-{{ category }}">
+			{{ message }}
+		</div>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+		{% block content %}{%endblock%}<br>
+	</div>
+	
+	<!-- /main content -->
+    
+    <!-- footer -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+			<div class="col-sm-4">
+		    	<div class="foot-header">KNOW MORE</div>
+					<div class="foot-links">
+			            <a href="about.html">About</a>
+			            <a href="accessions.html">Accessions</a>
+				        <a href="updates.html">Updates</a>
+						<a href="faqs.html">FAQs</a>
+					</div>
+				</div><!--/col-->
+				<div class="col-sm-4">
+				<div class="foot-header">TOOLS</div>
+					<div class="foot-links">
+							<a href="jbrowse.html">Genome browser</a>
+							<a href="blast.html">BLAST</a>
+							<a href="variants.html">Variants</a>
+							<a href="pseudogenomes.html">Pseudogenomes</a>
+							<a href="downloads.html">Downloads</a>
+					</div>
+				</div><!--/col-->
+				<div class="col-sm-4">
+					<div class="foot-header">OTHER LINKS</div>
+					<div class="foot-links">
+							<a href="https://www.botanik.kit.edu/"> Botanisches Institut</a>
+							<a href="http://www.kit.edu/">KIT</a>
+					</div>
+				</div> <!--col-->
+				
+			</div><!--/row-->
+		</div> <!--/container-->
+	</div> <!--footer-->
+	
+	 <!--bottom-footer-->
+	 
+<div id="bottom-footer">
+	<div class="container foot-links-normal">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+					&copy; Copyright 2020 Karlsruhe Institute of Technology (KIT), Germany. Developed by: 
+				<a href="http://www.mygeninformatics.com">MyGen Informatics</a>
+		   	</div><!--col-->
+        </div><!--/row-->
+    </div> <!--container-->                
+    </div> <!--bottom-footer-->
+<!-- <script src="static/js/jquery-3.5.1.js"></script> -->
+<!-- <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script> -->
+<script src='{{url_for("static", filename="/js/jquery-3.5.1.js")}}'></script>
+<script type="text/javascript" src='{{url_for("static", filename="/js/jquery.dataTables.min.js")}}''></script>
+<script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.10/js/dataTables.checkboxes.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/4.0.2/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+<script src="static/js/Typeahead.bundle.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+      });
+     
+</script> -->
+{% block scripts %}{%endblock%}			
+ </body>
+ </html>

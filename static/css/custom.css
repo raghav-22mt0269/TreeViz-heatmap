@@ -1,0 +1,425 @@
+
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/quicksand/v21/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58a-wg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+body {
+	padding-top: 0.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0px;
+	color: #212121;/*Black*/
+	font-family: 'Quicksand';
+}
+
+h1 {
+	color: #757575;/*Grey*/
+	font-weight: 100;
+	font-size: 40px;
+	letter-spacing: -.01em;
+	margin: 40px 0 20px
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 24px;
+	color: #535353;/*Dark Grey*/
+	padding-bottom: 20px
+}
+h2.projects {
+	font-weight: 300;
+	font-size: 34px;
+	padding-top: 40px;
+}
+h3 {
+	font-weight: 300;
+	font-size: 20px;
+	color: #535353;/*Dark Grey*/
+	padding-bottom: 20px
+	
+}
+
+hr {
+	padding-bottom: 12px; 
+}
+hr.headline {
+	margin-top: -20px;
+}
+hr.spacer {
+	margin-top: 40px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+.spacer {
+	padding-bottom: 32px;
+}
+.spacer-small {
+	padding-bottom: 16px;
+}
+
+.grey-ribbon {
+	background-color: #F7F7F7;
+}
+
+/*******************************************************************************
+ * navbar 	
+ ******************************************************************************/
+
+ .navbar-light {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #E7E7E7;/*very light shade of gray*/
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.29);
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.29);
+}
+
+/* Title 
+.navbar-brand {
+	font-size: 24px
+}
+.navbar-light .navbar-brand {
+    color: #777;
+}
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+    color: #5E5E5E;
+}
+*/
+
+/* Link 
+.navbar-light .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-light .navbar-nav > li > a:hover,
+.navbar-light .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-light .navbar-nav > .active > a,
+.navbar-light .navbar-nav > .active > a:hover,
+.navbar-light .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-light .navbar-nav > .open > a,
+.navbar-light .navbar-nav > .open > a:hover,
+.navbar-light .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+*/
+
+/* Caret 
+.navbar-light .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-light .navbar-nav > .dropdown > a:hover .caret,
+.navbar-light .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-light .navbar-nav > .open > a .caret,
+.navbar-light .navbar-nav > .open > a:hover .caret,
+.navbar-light .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+*/
+
+/* Mobile version
+.navbar-light .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-light .navbar-toggle:hover,
+.navbar-light .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-light .navbar-toggle .icon-bar {
+    background-color: #4c4c4c;
+}
+.navbar-light .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+}
+    .navbar-light .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-light .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+
+
+a.nav-link {
+  white-space: nowrap;
+}
+ */
+
+ 
+/*******************************************************************************
+ * masthead 	
+ ******************************************************************************/
+
+.bd-masthead {
+	position: relative;
+	padding: 7rem 15px 4rem;
+	color: white;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.bd-masthead .lead {
+	font-size: 3.5rem;
+	font-weight: 600;
+}
+.bd-masthead .sublead {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+p.lead.left {
+	text-align: left;
+}
+p.sublead.left {
+	text-align: left;
+}
+
+/*added*/
+.bd-masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #000000;
+  background-image: url("../img/Grape.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .bd-masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+
+/*******************************************************************************
+ * cards 	
+ ******************************************************************************/
+
+.card-container {
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+.card {
+	margin-bottom:15px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	border-radius: 2px;
+	border: none;
+	
+}
+.tools-card {
+	padding-bottom: 60px;
+	height: 200px;
+	margin-bottom: 60px;	
+}
+.tools-card h4 {
+	font-weight: 200;
+	font-size: 32px;/*Cards head*/
+	color: #757575;/*Grey*/
+	text-align: center;
+}
+.tools-card:hover {
+	background-color: #556B2F;/*Olive Green*/
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	cursor:pointer;
+	opacity: 10;
+}
+.tools-card:hover h4 {
+	color: #FFFFFF;/*White*/
+}
+/*
+.tools-card a {
+	
+}
+.tools-card a:hover {
+
+}
+*/
+.card-background-grey {
+	background-color: #F7F7F7;/*Light Grey*/
+}
+.card-border-blue {
+	border-color: #edb62b;/*Yellow*/
+	border-color: #3164A5;/*Dark Blue*/
+}
+.card-border-lightblue {
+	border-color: #1980de;/*Blue*/
+	border-color: #569ABD;/* Other type Blue*/
+}
+.card-border-blue {
+	border-color: #6FBDCC; /* seagull*/
+}
+.card-link {
+	text-decoration: none;
+	color: #757575 !important;/*White*/
+	text-align: center;
+}
+.tools-card:hover {
+	color: #FFFFFF;/*White*/
+}
+
+/*******************************************************************************
+ * footer 	
+ ******************************************************************************/
+
+.foot-links a, .foot-links p{
+	display: block;
+	color: #FFFFFF;/*White*/
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-size: 14px;/*For headers description*/
+	color: #D8DBDC; /*Light Grey*/
+	padding-bottom: 5px;  
+}
+.foot-links a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.foot-links-normal a {
+	color: rgb(63, 63, 63);/*Mixed black*/
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-size: 15px;/*For Bottom url*/
+	color: #3164A5;/*Dark blue*/
+	padding-bottom: 5px;  
+}
+.foot-links-normal a:hover {
+	color: white;
+	text-decoration: underline;
+}
+#footer{
+	background: #556B2F;/*Olive Green*/
+	border-top: 1px solid rgb(222, 222, 222);
+	margin-top: -2px;
+/* 	padding-top: 30px; */
+	padding-bottom: 30px;
+}
+.foot-header{
+	font-size: 17px;
+	color: white;
+	font-weight: 600;
+	padding-bottom: 7px;
+	padding-top: 30px;
+}
+  
+/* #footer .container{
+/* 	max-width: 1100px; */
+} */
+#bottom-footer{
+	background: #D8DBDC;/*Gray*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 15px;
+	color: #000000;/* Black*/
+}
+/*
+#bottom-footer a{
+	text-decoration: underline;
+	color: #D8DBDC;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	font-size: 12px;
+	padding: 0px 15px;
+	font-size: 13px;
+	color: #D8DBDC;
+	padding: 0 12px;
+}
+.bottom-footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+*/
+
+/***FAQs***/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Quicksand';
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 10px 10px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/*Icons for plus and minus*/
+.accordion:after {
+  /* content: '\02795'; Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+/* .active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) 
+} */
+
+/*check boxes variants*/
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 85%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
